@@ -1,0 +1,49 @@
+
+<!-- readme-banner.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="200" viewBox="0 0 1200 200">
+  <!-- Transparent background for README compatibility -->
+  <defs>
+    <!-- Accent gradient for the brackets -->
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff007a"/>
+      <stop offset="100%" stop-color="#ff2bd3"/>
+    </linearGradient>
+
+    <!-- Gradient underline -->
+    <linearGradient id="underline" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff007a"/>
+      <stop offset="50%" stop-color="#7a3cff"/>
+      <stop offset="100%" stop-color="#00c2ff"/>
+    </linearGradient>
+
+    <!-- Subtle glow for brackets -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Left angle bracket -->
+  <text x="80" y="110" font-family="Inter, Segoe UI, Arial, sans-serif"
+        font-size="68" font-weight="700" fill="url(#accent)" filter="url(#glow)">&lt;</text>
+
+  <!-- Name (edit this text) -->
+  
+  <text x="600" y="110" font-family="Inter, Segoe UI, Arial, sans-serif"
+        font-size="64" font-weight="600" fill="#e5e7eb"
+        text-anchor="middle">Letícia Girardi</text>
+
+
+  <!-- Right closing '/>' -->
+  <text x="930" y="110" font-family="Inter, Segoe UI, Arial, sans-serif"
+        font-size="68" font-weight="700" fill="url(#accent)" filter="url(#glow)">/&gt;</text>
+
+  <!-- Underline -->
+  <rect x="20" y="140" width="1160" height="4" rx="2" fill="url(#underline)"/>
+
+  <!-- Optional subtle top line for depth -->
+  <rect x="20" y="136" width="1160" height="1" fill="#2a2f3a" opacity="0.7"/>
+</svg>
